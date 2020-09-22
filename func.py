@@ -3,9 +3,10 @@
 def x(z):
     y = ['A', 'B', 'C', ‘D’]
     d = ‘’
-    for r in z:
-        if r not in y and ord(r) < 87:
-            d += r
+    for word in z:
+	for letter in word:
+    	    if letter not in y and ord(letter) < 87:
+                d += letter
     return d
 print(x(‘BED’))
 print(x(‘CLOSET’))
