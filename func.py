@@ -8,7 +8,7 @@ def remove_some_letters(arr):
                 new_word += l
                 if len(new_word) > 7:
                     raise Exception("TooLong Error")
-    return new_word
+    return ''.join(sorted(new_word))
 print(remove_some_letters([‘BED’]))
 print(remove_some_letters([‘CLOSET’]))
 
